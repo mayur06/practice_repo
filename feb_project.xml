@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main Test Suite" verbose="5">
+
+<parameter name="OS" value="Windows"/>
+<parameter name="browser" value="Firefox"/>
+
+  <test name="Extent Report Test">
+	<classes>
+	<!-- <class name="Framework.test.textBoxs_test"></class> -->
+	<!-- <class name="Framework.test.checkBoxs_test"></class> -->  
+	<!-- <class name="Framework.test.radio_butt_test"></class> -->
+	<class name="Framework.test.Webtables_test"></class>   
+	 <!-- <class name="Framework.test.buttons_test"></class> -->
+	 <!-- <class name="Framework.test.practice_form_test"></class> -->
+	</classes>
+  </test>
+</suite>
