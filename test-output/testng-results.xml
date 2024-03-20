@@ -1,185 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="0" skipped="2">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-17T11:10:22 IST" name="Default suite" finished-at="2024-03-17T11:10:43 IST" duration-ms="20258">
+  <suite started-at="2024-03-20T08:03:49 IST" name="Default suite" finished-at="2024-03-20T08:04:19 IST" duration-ms="30449">
     <groups>
     </groups>
-    <test started-at="2024-03-17T11:10:22 IST" name="Default test" finished-at="2024-03-17T11:10:43 IST" duration-ms="20258">
-      <class name="Framework.test.butt_test">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:Framework.test.butt_test@3a7442c7]" started-at="2024-03-17T11:10:22 IST" name="startReport" finished-at="2024-03-17T11:10:22 IST" duration-ms="615" status="PASS">
+    <test started-at="2024-03-20T08:03:49 IST" name="Default test" finished-at="2024-03-20T08:04:19 IST" duration-ms="30449">
+      <class name="Framework.test.textBoxs_test">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:Framework.test.textBoxs_test@6bbe85a8]" started-at="2024-03-20T08:03:48 IST" name="startReport" finished-at="2024-03-20T08:03:49 IST" duration-ms="859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="butt_test_second()[pri:0, instance:Framework.test.butt_test@3a7442c7]" started-at="2024-03-17T11:10:22 IST" name="butt_test_second" finished-at="2024-03-17T11:10:39 IST" duration-ms="16592" status="PASS">
+        <test-method is-config="true" signature="textboxs_test_second()[pri:0, instance:Framework.test.textBoxs_test@6bbe85a8]" started-at="2024-03-20T08:03:49 IST" name="textboxs_test_second" finished-at="2024-03-20T08:04:14 IST" duration-ms="24832" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- butt_test_second -->
-        <test-method signature="butt_test_third()[pri:1, instance:Framework.test.butt_test@3a7442c7]" started-at="2024-03-17T11:10:39 IST" name="butt_test_third" finished-at="2024-03-17T11:10:43 IST" duration-ms="3544" status="PASS">
+        </test-method> <!-- textboxs_test_second -->
+        <test-method signature="textboxs_test_third()[pri:1, instance:Framework.test.textBoxs_test@6bbe85a8]" started-at="2024-03-20T08:04:14 IST" name="textboxs_test_third" finished-at="2024-03-20T08:04:17 IST" duration-ms="2870" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- butt_test_third -->
-        <test-method is-config="true" signature="getresult(org.testng.ITestResult)[pri:0, instance:Framework.test.butt_test@3a7442c7]" started-at="2024-03-17T11:10:43 IST" name="getresult" finished-at="2024-03-17T11:10:43 IST" duration-ms="12" status="FAIL">
+        </test-method> <!-- textboxs_test_third -->
+        <test-method is-config="true" signature="getresult(org.testng.ITestResult)[pri:0, instance:Framework.test.textBoxs_test@6bbe85a8]" started-at="2024-03-20T08:04:17 IST" name="getresult" finished-at="2024-03-20T08:04:17 IST" duration-ms="40" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=butt_test_third status=SUCCESS method=butt_test.butt_test_third()[pri:1, instance:Framework.test.butt_test@3a7442c7] output={null}]]]>
+                <![CDATA[[TestResult name=textboxs_test_third status=SUCCESS method=textBoxs_test.textboxs_test_third()[pri:1, instance:Framework.test.textBoxs_test@6bbe85a8] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, com.aventstack.extentreports.markuputils.Markup)" because "Framework.base.TestsBases.test" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, com.aventstack.extentreports.markuputils.Markup)" because "Framework.base.TestsBases.test" is null
-at Framework.base.TestsBases.getresult(TestsBases.java:103)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getresult -->
-        <test-method signature="butt_test_fourth()[pri:2, instance:Framework.test.butt_test@3a7442c7]" started-at="2024-03-17T11:10:43 IST" name="butt_test_fourth" finished-at="2024-03-17T11:10:43 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, com.aventstack.extentreports.markuputils.Markup)" because "Framework.base.TestsBases.test" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, com.aventstack.extentreports.markuputils.Markup)" because "Framework.base.TestsBases.test" is null
-at Framework.base.TestsBases.getresult(TestsBases.java:103)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="textboxs_test_fourth()[pri:2, instance:Framework.test.textBoxs_test@6bbe85a8]" started-at="2024-03-20T08:04:17 IST" name="textboxs_test_fourth" finished-at="2024-03-20T08:04:17 IST" duration-ms="444" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- butt_test_fourth -->
-        <test-method is-config="true" signature="getresult(org.testng.ITestResult)[pri:0, instance:Framework.test.butt_test@3a7442c7]" started-at="2024-03-17T11:10:43 IST" name="getresult" finished-at="2024-03-17T11:10:43 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- textboxs_test_fourth -->
+        <test-method is-config="true" signature="getresult(org.testng.ITestResult)[pri:0, instance:Framework.test.textBoxs_test@6bbe85a8]" started-at="2024-03-20T08:04:17 IST" name="getresult" finished-at="2024-03-20T08:04:17 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=textboxs_test_fourth status=SUCCESS method=textBoxs_test.textboxs_test_fourth()[pri:2, instance:Framework.test.textBoxs_test@6bbe85a8] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getresult -->
-        <test-method signature="butt_test_fifth()[pri:3, instance:Framework.test.butt_test@3a7442c7]" started-at="2024-03-17T11:10:43 IST" name="butt_test_fifth" finished-at="2024-03-17T11:10:43 IST" duration-ms="2" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, com.aventstack.extentreports.markuputils.Markup)" because "Framework.base.TestsBases.test" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, com.aventstack.extentreports.markuputils.Markup)" because "Framework.base.TestsBases.test" is null
-at Framework.base.TestsBases.getresult(TestsBases.java:103)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- butt_test_fifth -->
-        <test-method is-config="true" signature="getresult(org.testng.ITestResult)[pri:0, instance:Framework.test.butt_test@3a7442c7]" started-at="2024-03-17T11:10:43 IST" name="getresult" finished-at="2024-03-17T11:10:43 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getresult -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Framework.test.butt_test@3a7442c7]" started-at="2024-03-17T11:10:43 IST" name="teardown" finished-at="2024-03-17T11:10:43 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Framework.test.textBoxs_test@6bbe85a8]" started-at="2024-03-20T08:04:17 IST" name="teardown" finished-at="2024-03-20T08:04:19 IST" duration-ms="2133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- Framework.test.butt_test -->
+      </class> <!-- Framework.test.textBoxs_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
