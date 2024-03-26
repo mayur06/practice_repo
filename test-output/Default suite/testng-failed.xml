@@ -5,11 +5,12 @@
     <classes>
       <class name="Framework.test.butt_test">
         <methods>
+          <include name="butt_test_third"/>
           <include name="teardown"/>
           <include name="getresult"/>
           <include name="startReport"/>
-          <include name="butt_test_fourth"/>
           <include name="butt_test_second"/>
+          <include name="butt_test_fourth"/>
           <include name="butt_test_fifth"/>
         </methods>
       </class> <!-- Framework.test.butt_test -->

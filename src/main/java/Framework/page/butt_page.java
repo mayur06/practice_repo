@@ -15,15 +15,15 @@ public class butt_page extends TestsBases {
 	@FindBy(xpath = "//li[@id='item-4']")
 	WebElement butt;
 
-	@FindBy(xpath = "(//button[@type='button'])[4]")
+	@FindBy(xpath = "(//button[contains(text(),'Click Me')])[3]")
 	WebElement click_me;
-	
-	//response alert
-	@FindBy(xpath="//p[@id='dynamicClickMessage']")
+
+	// response alert
+	@FindBy(xpath = "//p[@id='dynamicClickMessage']")
 	WebElement click_me_response;
-	
-	//double click
-	@FindBy(xpath="//button[@id='rightClickBtn']")
+
+	// double click
+	@FindBy(xpath = "//button[@id='rightClickBtn']")
 	WebElement right_click_butt;
 
 	public butt_page() {
@@ -32,27 +32,30 @@ public class butt_page extends TestsBases {
 
 	public void butt_page_first() throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,350)", "");
-		Thread.sleep(1000);
-		butt.click();
+		js.executeScript("window.scrollBy(0,300)", "");
 		Thread.sleep(2000);
+		butt.click();
+		js.executeScript("window.scrollBy(0,200)", "");
+
+		Thread.sleep(1000);
 		click_me.click();
+
 	}
-	
-	public List<String> click_me_response(){
-		List<String> list=new ArrayList<String>();
-		String click_response=click_me_response.getText();
+
+	public List<String> click_me_response() {
+		List<String> list = new ArrayList<String>();
+		String click_response = click_me_response.getText();
 		list.add(click_response);
 		return list;
 	}
-	
+
 	public void butt_page_second() throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,350)", "");
 		Thread.sleep(1000);
-		Actions actions=new Actions(driver);
-		actions.contextClick(right_click_butt).click();
-//		right_click_butt.click();
-		
+		Actions actions = new Actions(driver);
+		actions.contextClick(right_click_butt).click().build().perform();
+		right_click_butt.click();
+
 	}
 }
