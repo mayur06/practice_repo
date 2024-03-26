@@ -5,16 +5,15 @@
   <parameter name="browser" value="Firefox"/>
   <test thread-count="5" name="Extent Report Test(failed)" verbose="5">
     <classes>
-      <class name="Framework.test.Webtables_test">
+      <class name="Framework.test.butt_test">
         <methods>
-          <include name="Webtables_test_second"/>
-          <include name="Webtables_test_fourth"/>
+          <include name="teardown"/>
           <include name="getresult"/>
           <include name="startReport"/>
-          <include name="teardown"/>
-          <include name="Webtables_test_sixth"/>
+          <include name="butt_test_second"/>
+          <include name="butt_test_fourth"/>
         </methods>
-      </class> <!-- Framework.test.Webtables_test -->
+      </class> <!-- Framework.test.butt_test -->
     </classes>
   </test> <!-- Extent Report Test(failed) -->
 </suite> <!-- Failed suite [Main Test Suite] -->
