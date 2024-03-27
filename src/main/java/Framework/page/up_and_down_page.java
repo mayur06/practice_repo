@@ -24,9 +24,9 @@ public class up_and_down_page extends TestsBases {
 	public void up_and_down_page_first() throws InterruptedException {
 		Thread.sleep(1000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,250)", "");
+		js.executeScript("window.scrollBy(0,300)", "");
 		up_down.click();
-		Thread.sleep(2000);
+		Thread.sleep(2000);	
 		download_butt.click();
 	}
 	
