@@ -3,17 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Framework.test.butt_test">
+      <class name="Framework.test.up_and_down_test">
         <methods>
-          <include name="butt_test_third"/>
-          <include name="teardown"/>
           <include name="getresult"/>
           <include name="startReport"/>
-          <include name="butt_test_second"/>
-          <include name="butt_test_fourth"/>
-          <include name="butt_test_fifth"/>
+          <include name="up_and_down_test_fourth"/>
+          <include name="up_and_down_test_second"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- Framework.test.butt_test -->
+      </class> <!-- Framework.test.up_and_down_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

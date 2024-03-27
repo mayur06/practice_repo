@@ -7,12 +7,13 @@
 
   <test name="Extent Report Test">
 	<classes>
-	<!--<class name="Framework.test.textBoxs_test"></class> 
+	<class name="Framework.test.textBoxs_test"></class> 
 	<class name="Framework.test.checkBoxs_test"></class> 
 	<class name="Framework.test.radio_butt_test"></class> 
-	 <class name="Framework.test.Webtables_test"></class>  -->
-	 <class name="Framework.test.butt_test"></class> 
-	 <!-- <class name="Framework.test.practice_form_test"></class> -->
+	 <class name="Framework.test.Webtables_test"></class> 
+	 <class name="Framework.test.butt_test"></class>  
+	 <class name="Framework.test.up_and_down_test"></class> 
+	  <class name="Framework.test.practice_form_test"></class> 
 	</classes>
   </test>
 </suite>
