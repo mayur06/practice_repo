@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Main Test Suite]" guice-stage="DEVELOPMENT" verbose="5">
-  <parameter name="OS" value="Windows"/>
-  <parameter name="browser" value="Firefox"/>
-  <test thread-count="5" name="Extent Report Test(failed)" verbose="5">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Framework.test.Webtables_test">
+      <class name="Framework.test.practice_form_test">
         <methods>
-          <include name="Webtables_test_second"/>
-          <include name="Webtables_test_fourth"/>
+          <include name="teardown"/>
           <include name="getresult"/>
           <include name="startReport"/>
-          <include name="teardown"/>
-          <include name="Webtables_test_sixth"/>
+          <include name="practice_form_test_second"/>
+          <include name="practice_form_test_third"/>
         </methods>
-      </class> <!-- Framework.test.Webtables_test -->
+      </class> <!-- Framework.test.practice_form_test -->
     </classes>
-  </test> <!-- Extent Report Test(failed) -->
-</suite> <!-- Failed suite [Main Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
