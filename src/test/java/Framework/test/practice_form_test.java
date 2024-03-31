@@ -20,7 +20,6 @@ public class practice_form_test extends TestsBases {
 		super();
 	}
 	
-	
 	@BeforeClass
 	public void practice_form_test_second() throws IOException {
 		setup();

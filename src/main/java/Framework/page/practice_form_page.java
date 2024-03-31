@@ -2,14 +2,15 @@ package Framework.page;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import Framework.base.TestsBases;
+import org.openqa.selenium.Keys;
 
 public class practice_form_page extends TestsBases {
 	
@@ -68,6 +69,24 @@ public class practice_form_page extends TestsBases {
 	@FindBy(xpath="//button[@id='submit']")	
 	WebElement submit_button;
 	
+	@FindBy(xpath="//input[@id='dateOfBirthInput']")
+	WebElement dob;
+	
+	@FindBy(xpath="//select[@class='react-datepicker__month-select']")
+	WebElement month_select;
+	
+	@FindBy(xpath="//button[contains(text(),'Previous Month')]")
+	WebElement dec_select;
+	
+	@FindBy(xpath="//div[contains(text(),'14')]")
+	WebElement date_fourteen;
+	
+	@FindBy(xpath="//div[contains(text(),'17')]")
+	WebElement date_seventeen;
+	
+	@FindBy(xpath="//select[@class='react-datepicker__year-select']")
+	WebElement year_select;
+	
 	public practice_form_page() {
 		PageFactory.initElements(driver, this);
 	}
@@ -87,7 +106,24 @@ public class practice_form_page extends TestsBases {
 		Thread.sleep(1000);
 		gender_male.click();
 		mobile_number.sendKeys("1234567890");
-		subjects_input_form.sendKeys("Maths","English");
+		dob.click();
+		Thread.sleep(1000);
+		//This is date select by moving backward
+//		month_select.click();
+//		dec_select.click();
+//		date_fourteen.click();
+		
+		//This is date select date of birth 17 dec 1996
+		month_select.click();
+		month_select.sendKeys("December");
+		month_select.click();
+		Thread.sleep(2000);
+		year_select.click();
+		year_select.sendKeys("1996");
+		year_select.click();
+		date_seventeen.click();
+		Thread.sleep(1000);
+		subjects_input_form.sendKeys("Maths");
 		hobbies_sports.click();
 		hobbies_music.click();
 		WebElement upload=driver.findElement(By.cssSelector("input[type=file]"));
